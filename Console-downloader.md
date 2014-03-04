@@ -12,20 +12,16 @@
 <HTTP ссылка><пробел><имя файла, под которым его надо сохранить>
 
 пример:
-
-http://example.com/archive.zip my_archive.zip
-
-http://example.com/image.jpg picture.jpg
-
-......
+	http://example.com/archive.zip my_archive.zip
+	http://example.com/image.jpg picture.jpg
+	......
 
 
 В HTTP ссылке нет пробелов, нет encoded символов и прочей ерунды - это всегда обычные ссылки с английскими символами без специальных символов в именах файлов и прочее. Короче - ссылкам можно не делать decode. Ссылки без авторизации, не HTTPS/FTP - всегда только HTTP-протокол.
 
 Ссылки могут повторяться в файле, но с разными именами для сохранения, например:
-
-http://example.com/archive.zip first_archive.zip
-http://example.com/archive.zip second_archive.zip
+	http://example.com/archive.zip first_archive.zip
+	http://example.com/archive.zip second_archive.zip
 
 Одинаковые ссылки - это нормальная ситуация, хорошо бы ее учитывать.
 
