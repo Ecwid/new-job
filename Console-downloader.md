@@ -36,3 +36,4 @@
 
 	java -jar utility.jar -n 5 -l 2000k -o output_folder -f links.txt
 
+По всем вопросам смело писать на vgv@ecwid.com
