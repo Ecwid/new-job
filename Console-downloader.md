@@ -25,7 +25,6 @@ http://example.com/image.jpg picture.jpg
 Ссылки могут повторяться в файле, но с разными именами для сохранения, например:
 
 http://example.com/archive.zip first_archive.zip
-
 http://example.com/archive.zip second_archive.zip
 
 Одинаковые ссылки - это нормальная ситуация, хорошо бы ее учитывать.
