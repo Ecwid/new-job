@@ -1,0 +1,3 @@
+[submodule "httpdownloader"]
+	path = httpdownloader
+	url = https://github.com/BumbrT/httpdownloader
