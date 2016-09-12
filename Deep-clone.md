@@ -15,7 +15,7 @@ ComplexObject copy = CopyUtils.deepCopy(obj);
 - По всем вопросам смело писать на vgv@ecwid.com
 - Работать метод должен в первую очередь правильно, а уже потом быстро.
 - Использовать можно только возможности стандартной библиотеки J2SE
-- Писать нужно на Java (версия 7 и выше) или Kotlin.
+- Писать нужно на Java (версия 8 и выше) или Kotlin.
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
