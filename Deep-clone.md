@@ -18,6 +18,7 @@ ComplexObject copy = CopyUtils.deepCopy(obj);
 - Писать нужно на Java (версия 11 и выше) или Kotlin.
 - Я знаю про хаки с `java.io.Serializable` и `java.lang.Cloneable`, пожалуйста, давайте без них
  
+---
 Перед отправкой рекомендую проверить решение вот на таком классе:
 ```java
 class Man {
