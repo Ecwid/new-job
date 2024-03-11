@@ -1,12 +1,18 @@
-Привет, нам в Ecwid by Lightspeed очень нужны разработчики в Ереване и Тбилиси.
+Hi! We at Ecwid by Lightspeed are in great need of developers in Tbilisi and Yerevan.
 
-Мы разрабатываем самую крутую SaaS-платформу для ведения бизнеса в интернете. Наверное, тебе, как инженеру, это ни о чем не говорит, поэтому попробую зайти через аналогию. Если ты хочешь платформу для разработки – ты берешь GitHub. Если для online-торговли – Ecwid. 
-Как инженеру тебе надо будет разрабатывать новые фичи и фиксить баги, а если по простому – писать код. Дизайном заниматься не надо, версткой заниматься не надо, тексты придумывать не надо, общаться с какими-то мифическими "заказчиками" не надо. Для этого у нас в команде есть другие люди и вот как раз они любят верстку, дизайн и тексты.
+We are developing the coolest SaaS platform for doing business online. This probably doesn't tell you anything as an engineer, 
+so I'll try to go in through an analogy. If you want a platform for development - you take GitHub. If it's for online commerce - Ecwid.
+As an engineer you'll need to develop new features and fix bugs, or simply write code. 
+You don't need to do design, you don't need to do layout, you don't need to come up with texts, 
+you don't need to communicate with some mythical "customers". We have other people in our team for this purpose and they love layout, design and texts.
 
-Мы выдаем MacBook Pro и RSU (ограниченный пакет акций компании). В наших процессах есть доброжелательный code review, CI, авто-тесты и десятки релизов в день. В нашей инфраструктуре 50+ микросервисов, сотни терабайт трафика, Kotlin, Java, TypeScript, Kubernetes, PostgreSQL, Redis, SOLR, ClickHouse и наверняка что-то ещё, что я сходу не вспомнил.
+We give MacBook Pro and RSU (restricted stock units of the company). Our processes include friendly code review, CI, 
+auto-tests, and dozens of releases per day. Our infrastructure has 100+ microservices, hundreds of terabytes of traffic, 
+Kotlin, Java, TypeScript, Kubernetes, PostgreSQL, Redis, SOLR, ClickHouse, and probably something else I can't remember off the top of my head.
 
-Выбери любое тестовое задание, сделай как считаешь нужным и присылай результат на join-ecom@lightspeedhq.com
+Choose any test task, do it as you see fit and send the result to join-ecom@lightspeedhq.com.
 
 #### About
 
-Ecwid by Lightspeed — это eCom продукт, который в 2021 году стал частью компании Lightspeed (одного из лидеров  по POS-системам в мире), оценка Ecwid на момент сделки составила 500 миллионов долларов.
+Ecwid by Lightspeed is an eCom product that became part of Lightspeed (one of the leaders in POS systems in the world) in 2021. 
+Ecwid's valuation at the time of the deal was $500 million.
