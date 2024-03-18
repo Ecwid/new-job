@@ -1,4 +1,4 @@
-There are times in life when you want to make a complete copy of some object.
+Sometimes you want to make a complete copy of some object.
 
 Something like this:
 

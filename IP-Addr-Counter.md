@@ -1,4 +1,4 @@
-You have a simple text file with IPv4 addresses. One line is one address, roughly like this:
+You have a simple text file with IPv4 addresses. One line is one address, line by line:
 
 ```
 145.67.23.4
@@ -11,7 +11,7 @@ You have a simple text file with IPv4 addresses. One line is one address, roughl
 
 The file is unlimited in size and can occupy tens and hundreds of gigabytes.
 
-It is necessary to calculate the number of __unique addresses__ in this file using as little memory and time as possible. 
+You should calculate the number of __unique addresses__ in this file using as little memory and time as possible. 
 There is a "naive" algorithm for solving this problem (read line by line, put lines into HashSet). 
 It's better if your implementation is more complicated and faster than this naive algorithm.
 

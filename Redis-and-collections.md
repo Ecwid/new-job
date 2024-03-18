@@ -15,7 +15,7 @@ All sorts of other thoughts:
 - Redundancy of data storage in this cluster of redis is an interesting thought. Well, it's so that one redis goes down and its data doesn't go anywhere.
 - In Java Collections Framework there are other interfaces besides Map - List, Set, SortedSet, Queue, Deque, SortedMap. Here we go.
 
-Some details:
+Details:
 - It will be quite enough to make only Map[String, Integer] support. You don't need a universal solution for any data types. For List, Set, etc. it will be enough to make List[Integer] or List[String]
 - You can use any redis-solutions: standalone redis, sentinel or redis-cluster.
 - You don't need to write your own library to work with Redis, you can use a ready-made one (for example, jedis).

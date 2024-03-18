@@ -1,4 +1,4 @@
-Hi! We at Ecwid by Lightspeed are in great need of developers in Tbilisi and Yerevan.
+Hi! We at Ecwid by Lightspeed are highly interested in hiring developers in Tbilisi and Yerevan.
 
 We are developing the coolest SaaS platform for doing business online. This probably doesn't tell you anything as an engineer, 
 so I'll try to go in through an analogy. If you want a platform for development - you take GitHub. If it's for online commerce - Ecwid.

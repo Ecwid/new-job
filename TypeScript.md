@@ -15,10 +15,12 @@ The easiest way is to use a demo store. It's access info is like this:
 
 ### Page «products and categories list»
 The page contains a list of products and categories in any convenient format: grid, list table.
-Data for a category to display:
+
+Category page content:
 - category name
 - category image
-Data for displaying a product:
+
+Product page content:
 - product name
 - product price
 - product image
@@ -30,7 +32,7 @@ When you click on a category, the app takes you to a page with subcategories and
 #### Opening product details
 When you click on a product, the app goes to the Product Details page.
 
-### Page «Product details»
+### «Product details» page
 The page contains details about the product:
 - product name
 - product description
@@ -55,7 +57,7 @@ The page state is displayed in the url. When you navigate to a url, the page tha
 ### «Place order» button
 When you click on the button, a text congratulating you on your purchase is shown.
 
-##  Technologies
+## Technologies
 - Typescript
 - VueJS
 - HTML/CSS
