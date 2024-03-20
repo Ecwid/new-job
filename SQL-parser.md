@@ -1,14 +1,15 @@
-Парсер SQL запросов
+SQL query parser
 
-В SQL самым синтаксически сложным и навороченным является, пожалуй, запрос SELECT. Явные и неявные объединения, группировки, 
-подзапросы, сортировки и усечения выборки – вся эта красота может встречаться неоднократно даже в одном единственном 
-select-запросе.
+In SQL, the most syntactically complex and tricky query is probably the SELECT query. It has explicit and implicit joins, groupings,
+subqueries, sorting and truncation of selects - all this beauty can occur repeatedly even in one single
+select query.
 
-Например, так:
+For example, like this:
 ```sql
 SELECT * FROM book
 ```
-или так:
+or like this:
+
 ```sql
 SELECT author.name, count(book.id), sum(book.cost) 
 FROM author 
@@ -16,9 +17,9 @@ LEFT JOIN book ON (author.id = book.author_id)
 GROUP BY author.name 
 HAVING COUNT(*) > 1 AND SUM(book.cost) > 500
 LIMIT 10;
-```	
+```
 
-Напишите, пожалуйста, парсер произвольного SELECT-запроса, представляющего его в виде класса примерно такого структуры:
+Please write a parser for an arbitrary SELECT query, representing it as a class of approximately this structure:
 ```java
 class Query {
 	private List<String> columns;
@@ -32,26 +33,26 @@ class Query {
 }
 ```
 
-Структура этого класса не догма, а руководство к действию :) 
-Если вы придумали класс, лучше отражающий структуру SQL-запроса чем приведено здесь – смело используйте свое решение. 
+The structure of this class is not a requirement, but a guide to action :)
+If you have invented a class that reflects the SQL query structure better than the one given here - feel free to use your solution.
 
-Какие конструкции парсер должен поддерживать в обязательном порядке:
-- Перечисление полей выборки явно (с алиасами) или *
-- Неявное объединение нескольких таблиц (select * from A,B,C)
-- Явное объединение таблиц (inner, left, right, full join)
-- Фильтрующие условия (where a = 1 and b > 100)
-- Подзапросы (select * from (select * from A) a_alias)
-- Группировка по одному или нескольким полям (group by)
-- Сортировка по одному или нескольким полям (order by)
-- Усечение выборки (limit, offset)
+What constructs the parser must support in a mandatory way:
+- Enumeration of sample fields explicitly (with aliases) or *
+- Implicit join of several tables (select * from A,B,C)
+- Explicit join of tables (inner, left, right, full join)
+- Filter conditions (where a = 1 and b > 100)
+- Subqueries (select * from (select * from A) a_alias)
+- Grouping by one or several fields (group by)
+- Sorting by one or more fields (order by)
+- Selection truncation (limit, offset)
 
-На что можно не обращать внимание:
-- Дополнение выборок (union и union all)
+What can be ignored:
+- Complementing selections (union and union all)
 - CTE
-- Window-функции
+- Window functions
 
-Немного деталей:
-- Выполнять работу необходимо на Kotlin или Java (версия 17 или выше). 
-- В задании должен быть рабочий метод main(), это должно быть готовое приложение, а не просто библиотека
-- По всем вопросам смело писать на join-ecom@lightspeedhq.com
-- Сделанное задание необходимо разместить на GitHub
+Some details:
+- The assignment should be done in Kotlin or Java (version 17 or higher).
+- The assignment must have a working main() method, to demonstrate how it works
+- If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
+- The completed assignment should be posted on GitHub

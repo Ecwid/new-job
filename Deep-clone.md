@@ -1,28 +1,30 @@
-Бывают в жизни моменты, когда хочется взять и сделать полную копию какого-нибудь объекта.
+Sometimes you want to make a complete copy of some object.
 
-Как-то так:
+Something like this:
 
 ```java
 ComplexObject obj = ...
 ComplexObject copy = CopyUtils.deepCopy(obj);
 ```
 
-Проблема в том, что классы в Java бывают произвольной сложности - количество полей класса и их типы никак не регламентированы. Более того, система типов в Java замкнута - элементами массива/списка могут являться абсолютно любые типы данных, в том числе и массивы/списки. А ещё рекурсивные структуры данных - когда объект где-то в своих дебрях содержит ссылку на себя самого. Или на свою часть. 
+The problem is that classes in Java can be of arbitrary complexity - the number of class fields and their types are not regulated in any way. 
+Moreover, the type system in Java is closed - elements of an array/list can be absolutely any data types, including arrays and lists. 
+And also there are recursive data structures - when an object somewhere in its depths contains a reference to itself (or to a part of itself).
 
-Вам необходимо написать метод deepCopy(), который учитывает все эти нюансы и работает на объектах произвольной структуры и размера. 
+You need to write a deepCopy() method that takes all these nuances into account and works on objects of arbitrary structure and size.
 
-Немного деталей:
-- По всем вопросам смело писать на join-ecom@lightspeedhq.com
-- Работать метод должен в первую очередь правильно, а уже потом быстро.
-- Использовать можно только возможности стандартной библиотеки J2SE
-- Писать нужно на Java (версия 17 и выше) или Kotlin.
-- В задании должен быть рабочий метод main(), это должно быть готовое приложение, а не просто библиотека
-- Сделанное задание необходимо разместить на GitHub
+Some details:
+- If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
+- First of all, the method should work correctly. Speed is also important, but not as much as correctness 
+- You can only use the features of the standard J2SE library
+- Code should be written in Java (version 17 and above) or Kotlin.
+- The assignment must have a working main() method, to demonstrate how it works
+- The completed assignment should be posted on GitHub
 
-P.S. Я знаю про хаки с `java.io.Serializable` и `java.lang.Cloneable`, пожалуйста, давайте без них
- 
+P.S. I know about hacks with `java.io.Serializable` and `java.lang.Cloneable`, please don't use them
+
 ---
-Перед отправкой рекомендую проверить решение вот на таком классе:
+Before submitting, I recommend testing the solution on a class like this:
 ```java
 class Man {
 	private String name;

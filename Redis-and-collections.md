@@ -1,25 +1,26 @@
-Сначала немного фактов:
-- Есть такая штука - Redis.
-- Есть такой интерфейс - java.util.Map
+First, some facts:
+- There is key-value storage: [Redis](https://redis.io/).
+- Java has interface java.util.Map
 
-Мы очень любим Redis, но его использование через отдельную клиентскую библиотеку в Java нам не очень нравится. Это работает, это удобно, но не прикольно.
-Опять же, в Java есть базовый интерфейс для реализции хеш-таблиц - Map. А в Redis'е есть структура данных hash.
+We like Redis a lot, but using it through a separate client library in Java doesn't really appeal to us. It works, it's convenient, but it's not fun.
+Again, Java has a basic interface for implementing hash tables - Map. And Redis has a hash data structure.
 
-Нам бы хотелось работать с хешами в Redis через этот базовый интерфейс. То есть - у меня есть некий объект, который реализует интерфейс Map, я просто дергаю его методы get/put/etc., а данные реально хранятся в Redis'е, не в моем Java-приложении.
-Тогда я мог бы передавать этот объект куда угодно, где ожидается интерфейс Map и всё будет просто работать.
+We would like to work with hashes in Redis through this base interface. That is - I have some object that implements the Map interface, 
+I just pull its get/put/etc. methods, and the data is actually stored in Redis, not in my Java application.
+Then I could pass that object anywhere the Map interface is expected and everything would just work.
 
-Всякие другие мысли:
-- Данных у нас очень много и на одну машину с Redis'ом они просто не влезут. Хорошо бы реализации самой "размазывать" данные по кластеру Redis'ов, полностью скрывая детали о количестве экземпляров редиски и прочем.
-- Поддержка добавления/удаления Redis-серверов на лету - это очень хорошо. Ключевое слово - "на лету".
-- Избыточность хранения данных в этом кластере редисок - интересная мысль. Ну, это так чтобы одна редиска упала, а её данные никуда не пропали.
-- В Java Collections Framework кроме Map есть и другие интерфейсы - List, Set, SortedSet, Queue, Deque, SortedMap. Воооооот.
+All sorts of other thoughts:
+- We have a lot of data and it just won't fit on a single Redis machine. It would be nice if the implementation itself could split the data across a cluster of Redis's, completely hiding details about the number of Redis instances and whatnot.
+- Support for adding/removing Redis servers on the fly is very good. The key word is "on the fly".
+- Redundancy of data storage in this cluster of redis is an interesting thought. Well, it's so that one redis goes down and its data doesn't go anywhere.
+- In Java Collections Framework there are other interfaces besides Map - List, Set, SortedSet, Queue, Deque, SortedMap. Here we go.
 
-Немного деталей:
-- Вполне достаточно будет сделать поддержку только Map[String, Integer]. Не надо универсального решения для любых типов данных. Для List, Set и прочего вполне достаточно сделать List[Integer] или List[String]
-- Можно использовать любые redis-решения: голую редиску, sentinel или redis-cluster. 
-- Писать свою библиотеку для работы с Redis не надо, вполне можно взять готовую (например, jedis)
-- Писать нужно на Java (версия 17 и выше) или Kotlin.
-- В задании должен быть рабочий метод main(), это должно быть готовое приложение, а не просто библиотека
-- Ну и вообще - делайте что хотите, лишь бы работало.
-- По всем вопросам смело писать на join-ecom@lightspeedhq.com
-- Сделанное задание необходимо разместить на GitHub
+Details:
+- It will be quite enough to make only Map[String, Integer] support. You don't need a universal solution for any data types. For List, Set, etc. it will be enough to make List[Integer] or List[String]
+- You can use any redis-solutions: standalone redis, sentinel or redis-cluster.
+- You don't need to write your own library to work with Redis, you can use a ready-made one (for example, jedis).
+- You should write in Java (version 17 and above) or Kotlin.
+- The assignment must have a working main() method, to demonstrate how it works
+- In general - do whatever you want, as long as it works.
+- If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
+- The completed task should be placed on GitHub

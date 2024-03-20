@@ -1,4 +1,4 @@
-Дан простой текстовый файл с IPv4 адресами. Одна строка – один адрес, примерно так:
+You have a simple text file with IPv4 addresses. One line is one address, line by line:
 
 ```
 145.67.23.4
@@ -9,16 +9,18 @@
 ...
 ```
 
-Файл в размере не ограничен и может занимать десятки и сотни гигабайт.
+The file is unlimited in size and can occupy tens and hundreds of gigabytes.
 
-Необходимо посчитать количество __уникальных адресов__ в этом файле, затратив как можно меньше памяти и времени. Существует "наивный" алгоритм решения данной задачи (читаем строка за строкой, кладем строки в HashSet), желательно чтобы ваша реализация была лучше этого простого, наивного алгоритма.
+You should calculate the number of __unique addresses__ in this file using as little memory and time as possible. 
+There is a "naive" algorithm for solving this problem (read line by line, put lines into HashSet). 
+It's better if your implementation is more complicated and faster than this naive algorithm.
 
-Немного деталей:
-- По всем вопросам смело писать на join-ecom@lightspeedhq.com
-- Использовать можно только возможности стандартной библиотеки Java/Kotlin
-- Писать нужно на Java (версия 17 и выше) или Kotlin.
-- В задании должен быть рабочий метод main(), это должно быть готовое приложение, а не просто библиотека
-- Сделанное задание необходимо разместить на GitHub
+Some details:
+- For any questions, feel free to write to join-ecom@lightspeedhq.com
+- You can only use the features of the standard Java/Kotlin library.
+- You should write in Java (version 17 and above) or Kotlin.
+- The assignment must have a working main() method, to demonstrate how it works
+- The completed assignment should be posted on GitHub
 
 ---
-Прежде чем отправить задание, имеет смысл проверить его вот на этом [файле](https://ecwid-vgv-storage.s3.eu-central-1.amazonaws.com/ip_addresses.zip). Внимание – файл весит около 20Gb, а распаковывается приблизительно в 120Gb.
+Before submitting an assignment, it will be nice to check how it handles this [file](https://ecwid-vgv-storage.s3.eu-central-1.amazonaws.com/ip_addresses.zip). Attention - the file weighs about 20Gb, and unzips to about 120Gb.
