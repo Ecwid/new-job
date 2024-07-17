@@ -64,3 +64,6 @@ When you click on the button, a text congratulating you on your purchase is show
 
 ## Design
 Pages should look nice and readable. You can use any CSS framework.
+
+## Code sharing platform
+You can upload the  code to your GitHub/Bitbucket or use the Web IDE: https://codesandbox.io.
