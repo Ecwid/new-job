@@ -10,8 +10,8 @@ Write an application that contains three pages:
 Store data must be accessed using [Ecwid REST API](https://api-docs.ecwid.com/reference/rest-api)
 
 The easiest way is to use a demo store. It's access info is like this: 
-- StoreID: 58958138
-- Token: public_7BxbJGWyDaZfSQqjVS5Ftr4jzXkS43UD
+- StoreID: 108362264
+- Token: public_RiNvjTVVzKLhFNWyzR5fNY68u1GMHLEs
 
 ### Page «products and categories list»
 The page contains a list of products and categories in any convenient format: grid, list table.
