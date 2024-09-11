@@ -18,7 +18,7 @@ It's better if your implementation is more complicated and faster than this naiv
 Some details:
 - For any questions, feel free to write to join-ecom@lightspeedhq.com
 - You can only use the features of the standard Java/Kotlin library.
-- You should write in Java (version 17 and above) or Kotlin.
+- You should write in Java (version 21 and above) or Kotlin.
 - The assignment must have a working main() method, to demonstrate how it works
 - The completed assignment should be posted on GitHub
 

@@ -17,7 +17,7 @@ Some details:
 - If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
 - First of all, the method should work correctly. Speed is also important, but not as much as correctness 
 - You can only use the features of the standard J2SE library
-- Code should be written in Java (version 17 and above) or Kotlin.
+- Code should be written in Java (version 21 and above) or Kotlin.
 - The assignment must have a working main() method, to demonstrate how it works
 - The completed assignment should be posted on GitHub
 

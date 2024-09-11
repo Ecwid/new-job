@@ -19,7 +19,7 @@ Details:
 - It will be quite enough to make only Map[String, Integer] support. You don't need a universal solution for any data types. For List, Set, etc. it will be enough to make List[Integer] or List[String]
 - You can use any redis-solutions: standalone redis, sentinel or redis-cluster.
 - You don't need to write your own library to work with Redis, you can use a ready-made one (for example, jedis).
-- You should write in Java (version 17 and above) or Kotlin.
+- You should write in Java (version 21 and above) or Kotlin.
 - The assignment must have a working main() method, to demonstrate how it works
 - In general - do whatever you want, as long as it works.
 - If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
