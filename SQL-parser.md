@@ -52,7 +52,7 @@ What can be ignored:
 - Window functions
 
 Some details:
-- The assignment should be done in Kotlin or Java (version 17 or higher).
+- The assignment should be done in Kotlin or Java (version 21 or higher).
 - The assignment must have a working main() method, to demonstrate how it works
 - If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
 - The completed assignment should be posted on GitHub
